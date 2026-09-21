@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueGame | دانلود بازی و مود</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+  <div class="logo">
+    <span>Blue</span>Game
+  </div>
+
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#games">بازی‌ها</a>
+    <a href="#mods">مودها</a>
+    <a href="#news">اخبار</a>
+  </nav>
+
+  <a href="admin.html" class="admin-btn">پنل مدیریت</a>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <div class="badge">🎮 BLUEGAME</div>
+
+    <h1>
+      دنیای بازی‌ها
+      <span>در یکجا</span>
+    </h1>
+
+    <p>
+      جدیدترین بازی‌ها، مودها و اخبار دنیای گیم
+      را در BlueGame پیدا کن.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#games" class="btn blue">مشاهده بازی‌ها</a>
+      <a href="#mods" class="btn dark">مشاهده مودها</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="games">
+
+  <div class="section-title">
+    <small>GAME DOWNLOAD</small>
+    <h2>دانلود <span>بازی</span></h2>
+    <p>بازی‌های قرار گرفته در BlueGame</p>
+  </div>
+
+  <div id="gameList" class="cards"></div>
+
+</section>
+
+
+<section class="section" id="mods">
+
+  <div class="section-title">
+    <small>MINECRAFT MODS</small>
+    <h2>مودهای <span>محبوب</span></h2>
+    <p>مودهای Minecraft Java و Bedrock</p>
+  </div>
+
+  <div class="filters">
+
+    <input
+      type="text"
+      id="search"
+      placeholder="🔎 جستجوی مود..."
+    >
+
+    <select id="modType">
+      <option value="all">همه</option>
+      <option value="java">Java</option>
+      <option value="bedrock">Bedrock</option>
+    </select>
+
+  </div>
+
+  <div id="modList" class="cards"></div>
+
+</section>
+
+
+<section class="section" id="news">
+
+  <div class="section-title">
+    <small>LATEST NEWS</small>
+    <h2>آخرین <span>اخبار</span></h2>
+  </div>
+
+  <div id="newsList" class="news-list"></div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="logo">
+    <span>Blue</span>Game
+  </div>
+
+  <p>
+    © 2026 BlueGame - تمامی حقوق محفوظ است.
+  </p>
+
+</footer>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
